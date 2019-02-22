@@ -7,9 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <article class="output">
+   <section id="formContainer"> <h1>Ternary Traveler</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="inputName">
+    <label for="description">Description:</label>
+    <input type="text" id="inputDescription">
+    <label for="location">Location:</label>
+    <select name="location" id="selectLocation">
+        <option value="1" id="1">Italy</option>
+        <option value="2" id="2">Switzerland</option>
+        <option value="3" id="3">France</option>
+    </select>
+    <button id="save--button">Save</button>
+    <hr>
+</section>
+   <section id="listContainer"></section>
 
-    </article>
 
     <script src="bundle.js"></script>
 </body>

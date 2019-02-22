@@ -1,8 +1,12 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+import interestHTML from "./interestsHTML"
+import eventListenerAdd from "./eventListenerAdd"
 
-sayHello()
-sayGoodbye()
-
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+let listContainer = document.getElementById("listContainer")
+eventListenerAdd()
+ fetch ("http://localhost:8088/interests?_expand=place")
+        .then(res => res.json())
+        .then((interestArray) => {interestArray.forEach(interest => {
+            listContainer.innerHTML += interestHTML(interest)
+            })
+        }
+        )
