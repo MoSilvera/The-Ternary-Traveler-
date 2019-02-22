@@ -24,15 +24,21 @@
       "description": "Local market where you can try purchase local products and try the local food"
     },
     {
-      "placeId": "2",
-      "name": "Even cooler place",
-      "description": "so far the coolest",
-      "id": 3
+      "placeId": "1",
+      "name": "Rome",
+      "description": "Pretty cool place with really old stuff. ",
+      "id": 2
     },
     {
       "placeId": "3",
-      "name": "Third time is the charm",
-      "description": "woot",
+      "name": "Eiffel Tower ",
+      "description": "Tall, pointy, neat-o",
+      "id": 3
+    },
+    {
+      "placeId": "2",
+      "name": "The birth place of Swiss cheese",
+      "description": "slightly stinky and full of holes ",
       "id": 4
     }
   ]
