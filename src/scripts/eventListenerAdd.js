@@ -1,4 +1,5 @@
 import interestsObject from "./interestsObject"
+import APImanager from "./APImanager"
 
 const eventListenerAdd = () => {
     let formContainer = document.getElementById("save--button")
@@ -7,13 +8,7 @@ const eventListenerAdd = () => {
         let description = document.getElementById("inputDescription").value
         let placeId = document.getElementById("selectLocation").value
         let newObject = interestsObject(name, description, placeId)
-        fetch("http://localhost:8088/interests", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newObject)
-        })
+        APImanager.post(newObject)
         .then(location.reload())
    }
 
