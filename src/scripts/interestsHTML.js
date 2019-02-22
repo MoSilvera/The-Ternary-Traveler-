@@ -1,4 +1,4 @@
-let interestHTML = (interest) => {
+let interestsHTML = (interest) => {
         return `
         <section id="interest--${interest.id}">
             <h2>${interest.name}</h2>
@@ -10,4 +10,4 @@ let interestHTML = (interest) => {
     }
 
 
-export default interestHTML
+export default interestsHTML
