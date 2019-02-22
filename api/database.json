@@ -24,10 +24,16 @@
       "description": "Local market where you can try purchase local products and try the local food"
     },
     {
-      "placeId": "1",
-      "name": "cool place",
-      "description": "very cool",
-      "id": 2
+      "placeId": "2",
+      "name": "Even cooler place",
+      "description": "so far the coolest",
+      "id": 3
+    },
+    {
+      "placeId": "3",
+      "name": "Third time is the charm",
+      "description": "woot",
+      "id": 4
     }
   ]
 }
