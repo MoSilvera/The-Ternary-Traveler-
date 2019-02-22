@@ -7,7 +7,7 @@ const eventListenerDelete = () => {
             if (confirmation)
             {
                 let objectid = event.target.id.split("--")[2]
-                APImanager(objectid)
+                APImanager.delete(objectid)
                 .then(location.reload())
             }
         }
